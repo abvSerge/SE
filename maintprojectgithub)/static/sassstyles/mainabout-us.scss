@@ -1,0 +1,45 @@
+
+$colortext:#685206;
+$colorsign: #ef0b0b;
+
+.four {
+    a {
+        border-bottom-style: solid;
+        border-color: rgba(214, 247, 180, 0.375);
+        color: rgb(101, 101, 101);
+    }
+}
+
+.textt {
+    border-right-style: solid;
+    border-right-width: 2px;
+}
+.text{
+    display:flex;
+}
+
+p.r {
+    color: $colortext;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: justify;
+    padding: 20px;
+
+    span{
+        color: $colorsign;
+    }
+
+}
+
+@media (max-width: 700px){
+    .text{
+        display:flex;
+        flex-direction: column;
+    }
+    .textt{
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-right-style: none;
+    }    
+}
